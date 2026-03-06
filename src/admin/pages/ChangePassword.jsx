@@ -1,6 +1,6 @@
 import { useState } from "react";
 import API from "../../api/axios";
-import "../styles/changePassword.css";
+import "../styles/changepassword.css";
 
 export default function ChangePassword() {
   const [currentPassword, setCurrentPassword] = useState("");

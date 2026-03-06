@@ -1,0 +1,88 @@
+.cta {
+    padding: 80px 0;
+    background:
+        linear-gradient(135deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url("../assets/images/hero-img.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #fff;
+}
+
+.cta-box {
+    text-align: center;
+    max-width: 700px;
+}
+
+.cta-box h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.cta-box p {
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+
+.cta-btn {
+    padding: 12px 32px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.cta-btn:hover {
+    color: #000;
+    background-color: #2bb5a7;
+    box-shadow: 0 0 20px rgba(0, 194, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+@media (max-width:426px){
+
+.cta{
+  padding:60px 16px;
+  background-attachment:fixed;
+}
+
+
+
+.cta-box{
+  max-width:100%;
+}
+
+
+
+.cta-box h2{
+  font-size:24px;
+}
+
+
+
+.cta-box p{
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+
+
+.cta-btn{
+  width:100%;
+  padding:12px;
+  font-size:14px;
+}
+
+}

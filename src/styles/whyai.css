@@ -1,0 +1,99 @@
+.whyai {
+  padding: 100px 0;
+  background-color: var(--dark-bg);
+  text-align: center;
+}
+
+
+.whyai-intro {
+  max-width: 750px;
+  margin: 0 auto 60px;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+.whyai-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+
+.whyai-card {
+  background: var(--dark-bg);
+  padding: 35px 28px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.whyai-card h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+
+.whyai-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+
+.whyai-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+@media (max-width:426px){
+
+
+
+.whyai{
+  padding:70px 16px;
+}
+
+
+
+.whyai-intro{
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:35px;
+}
+
+
+
+.whyai-points{
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+
+
+.whyai-card{
+  padding:20px;
+  border-radius:12px;
+}
+
+
+
+.whyai-card h3{
+  font-size:16px;
+}
+
+
+
+.whyai-card p{
+  font-size:13px;
+  line-height:1.6;
+}
+
+}

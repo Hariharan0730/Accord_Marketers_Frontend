@@ -1,0 +1,199 @@
+
+
+
+
+.case-page{
+  padding:100px 20px;
+  background:var(--dark-bg);
+  margin-top:80px !important;
+  min-height:100vh;
+}
+
+.case-page h1{
+  text-align:center;
+  color:#fff;
+  font-size:36px;
+  margin-bottom:60px;
+  font-weight:600;
+}
+
+
+
+
+
+.case-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:auto auto auto;
+  justify-items:center;
+  gap:35px;
+}
+
+
+
+
+
+.case-card{
+  background:#0c1d20;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s ease;
+  padding-bottom:25px;
+
+  max-width:300px;
+  width:100%;
+}
+
+.case-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.35);
+}
+
+
+
+
+
+.case-card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  transition:0.4s ease;
+}
+
+.case-card:hover img{
+  transform:scale(1.05);
+}
+
+
+
+
+
+.case-card h3{
+  color:#fff;
+  font-size:20px;
+  margin:18px 20px 10px;
+}
+
+.case-meta{
+  color:#94a3b8;
+  font-size:13px;
+  margin:0 20px 12px;
+}
+
+.case-card p{
+  color:#cbd5e1;
+  font-size:14px;
+  line-height:1.6;
+  margin:0 20px 18px;
+}
+
+
+
+
+
+.read-more-c{
+  margin-left:20px;
+  text-decoration:none;
+  padding: 0;
+  color:#06d47e;
+  font-weight:500;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.read-more:hover{
+  color:#00ffa6;
+}
+
+
+
+
+
+.pagination{
+  margin-top:60px;
+  margin-bottom: 60px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.pagination span{
+  color:#cbd5e1;
+  font-size:14px;
+}
+
+.pagination button{
+  padding:8px 18px;
+  background:#0a2d34;
+  border:none;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.pagination button:hover{
+  background:#06d47e;
+}
+
+.pagination button:disabled{
+  opacity:0.4;
+  cursor:not-allowed;
+}
+
+
+
+
+
+@media(max-width:426px){
+
+.case-page{
+  padding:120px 16px 60px;
+}
+
+.case-page h1{
+  font-size:24px;
+  margin-bottom:35px;
+}
+
+
+
+.case-grid{
+  grid-template-columns:1fr;
+  gap:25px;
+}
+
+
+
+.case-card{
+  max-width: 300px;
+  width:100%;
+}
+
+.case-card img{
+  height:200px;
+}
+
+.case-card h3{
+  font-size:18px;
+}
+
+.case-card p{
+  font-size:14px;
+}
+
+
+
+.pagination{
+  flex-direction:row;
+  gap:12px;
+  justify-content:center;
+  align-items:center;
+}
+
+.pagination button{
+  width:120px;
+}
+
+}

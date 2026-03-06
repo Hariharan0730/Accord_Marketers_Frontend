@@ -1,0 +1,151 @@
+.contact {
+    padding: 90px 0;
+    background-image:
+        linear-gradient(rgba(11, 15, 26, 0.88),
+            rgba(11, 15, 26, 0.88)),
+        url("../assets/images/hero-img.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contact-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.contact-desc {
+    max-width: 720px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--light-bg);
+    padding: 32px;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    border: none;
+    background-color: #020617;
+    color: var(--text-main);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    padding: 12px 28px;
+    background-color: var(--primary);
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
+.contact-success {
+    margin-top: 15px;
+    text-align: center;
+    color: #22c55e;
+    font-size: 14px;
+}
+
+
+
+
+.contact-error {
+    margin-top: 15px;
+    text-align: center;
+    color: #ef4444;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width:426px){
+
+.contact{
+  padding:120px 16px 70px;
+  background-attachment:scroll;
+}
+
+
+
+.contact-title{
+  font-size:26px;
+}
+
+
+
+.contact-desc{
+  font-size:14px;
+  margin-bottom:30px;
+}
+
+
+
+.contact-form{
+  max-width:100%;
+  padding:20px;
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+  padding:12px;
+  font-size:14px;
+}
+
+
+
+.contact-form button{
+  width:100%;
+  padding:12px;
+}
+
+
+
+.contact-success,
+.contact-error{
+  font-size:13px;
+}
+
+}

@@ -1,0 +1,275 @@
+
+
+
+
+.case-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #03af73;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: .25s ease;
+}
+
+.btn-primary:hover {
+    background: #018a5a;
+}
+
+
+
+
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px;
+    text-align: left;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background: rgba(255, 255, 255, .08);
+    font-weight: 500;
+}
+
+.admin-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+
+.admin-table tr:hover {
+    background: rgba(255, 255, 255, .03);
+}
+
+
+
+
+
+.case-study-action {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.status-published {
+    background: rgba(34, 197, 94, .15);
+    color: #22c55e;
+}
+
+.status-draft {
+    background: rgba(245, 158, 11, .15);
+    color: #f59e0b;
+}
+
+
+
+
+
+.featured-badge {
+    background: #10b981;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.not-featured {
+    background: #374151;
+    color: #d1d5db;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+
+
+
+
+.action-link {
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: rgba(59, 130, 246, .15);
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 13px;
+    border: 1px solid rgba(59, 130, 246, .4);
+    transition: .25s ease;
+}
+
+.action-link:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(239, 68, 68, .15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, .4);
+    cursor: pointer;
+    font-size: 13px;
+    transition: .25s ease;
+}
+
+.delete-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+
+
+
+
+.pagination {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.pagination button:hover {
+    background: #1f2937;
+}
+
+.pagination button:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+
+
+
+
+@media (max-width:426px) {
+
+   
+
+    .case-page {
+        padding: 10px;
+        gap: 15px;
+    }
+
+   
+
+    .page-header {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-primary {
+        max-width: 200px;
+        text-align: center;
+    }
+
+
+    .page-header h2 {
+        font-size: 20px;
+    }
+
+   
+
+   
+
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+   
+
+    .admin-table th,
+    .admin-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+   
+
+    .case-study-action {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .action-link,
+    .delete-btn {
+        
+        text-align: center;
+    }
+
+   
+
+    .pagination {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .pagination button {
+        width: 80px;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .pagination span {
+        font-size: 12px;
+    }
+
+}

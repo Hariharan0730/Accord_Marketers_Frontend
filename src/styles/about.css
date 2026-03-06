@@ -1,0 +1,177 @@
+
+
+
+
+.about {
+  padding: 120px 0;
+  background-image:
+    linear-gradient(rgba(11,15,26,0.88),
+    rgba(11,15,26,0.88)),
+    url("../assets/images/hero-img.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: var(--text-main);
+}
+
+
+
+.about-header{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.about-title{
+  font-size:42px;
+  font-weight:700;
+}
+
+.about-title span{
+  color:var(--primary);
+}
+
+.about-subtitle{
+  margin-top:12px;
+  color:var(--text-muted);
+  font-size:17px;
+}
+
+
+
+.about-content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:start;
+}
+
+
+
+.about-text{
+  margin-bottom:20px;
+  line-height:1.8;
+  color:var(--text-muted);
+  font-size:15px;
+}
+
+
+
+.about-stats{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.stat-card{
+  background:var(--light-bg);
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  flex:1;
+  min-width:120px;
+  transition:0.3s;
+}
+
+.stat-card h3{
+  font-size:24px;
+  color:var(--primary);
+}
+
+.stat-card p{
+  font-size:13px;
+  color:var(--text-muted);
+}
+
+.stat-card:hover{
+  transform:translateY(-4px);
+}
+
+
+
+.about-highlight{
+  background:var(--light-bg);
+  padding:28px;
+  border-radius:12px;
+  margin-bottom:22px;
+  border-left:4px solid var(--primary);
+  transition:0.3s;
+}
+
+.about-highlight h3{
+  margin-bottom:10px;
+}
+
+.about-highlight p{
+  color:var(--text-muted);
+  font-size:14px;
+  line-height:1.7;
+}
+
+.about-highlight:hover{
+  transform:translateY(-5px);
+}
+
+
+
+
+
+@media (max-width:768px){
+
+  .about-content{
+    grid-template-columns:1fr;
+  }
+
+  .about-title{
+    font-size:34px;
+  }
+
+}
+
+
+
+
+
+@media (max-width:426px){
+
+  .about{
+    padding:150px 16px;
+    background-attachment:scroll;
+  }
+
+  .about-header{
+    margin-bottom:40px;
+  }
+
+  .about-title{
+    font-size:26px;
+  }
+
+  .about-subtitle{
+    font-size:14px;
+  }
+
+  .about-content{
+    gap:30px;
+  }
+
+  .about-text{
+    font-size:14px;
+  }
+
+  .about-stats{
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .stat-card{
+    width:100%;
+  }
+
+  .about-highlight{
+    padding:20px;
+  }
+
+}

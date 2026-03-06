@@ -1,0 +1,19 @@
+:root {
+  
+  --primary: #6cf2c2;
+  --secondary: #4fd1c5;
+
+  
+  --dark-bg: #0b0f1a;
+  --light-bg: #111827;
+
+  
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+
+  
+  --max-width: 1200px;
+
+  
+  --transition: all 0.3s ease;
+}

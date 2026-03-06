@@ -1,0 +1,134 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.services-page {
+    padding: 90px 0;
+    background-color: var(--dark-bg);
+}
+
+
+.services-page-title {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+
+.services-page-desc {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 760px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+
+.services-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+
+.services-page-card {
+    background-color: var(--light-bg);
+    padding: 28px;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+
+.services-page-card h3 {
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 18px;
+}
+
+
+.services-page-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+
+.services-page-card:hover {
+    transform: translateY(-4px);
+}
+
+.services-page-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+@media (max-width:426px) {
+
+    
+
+    .services-page {
+        padding: 70px 16px;
+    }
+
+    
+
+    .services-page-title {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+
+    
+
+    .services-page-desc {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 35px;
+    }
+
+    
+
+    .services-page-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    
+
+    .services-page-card {
+        background: #111827;
+        padding: 20px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: 0.3s;
+    }
+
+    .services-page-card:hover {
+        transform: translateY(-6px);
+        border-color: #6cf2c2;
+    }
+
+    
+
+    .services-page-card p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+}

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import API from "../../api/axios";
-import ReactQuill from "react-quill-new";
 import RichEditor from "../components/RichEditor";
 import "react-quill/dist/quill.snow.css";
 import "../styles/editblog.css";

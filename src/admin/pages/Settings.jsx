@@ -61,13 +61,16 @@ export default function Settings() {
 
             const res = await API.get("/api/settings");
 
-            setWebsite(res.data.website || {});
+            setWebsite({
+                siteTitle: res.data?.website?.siteTitle || "",
+                contactEmail: res.data?.website?.contactEmail || "",
+                phone: res.data?.website?.phone || ""
+            });
 
         } catch (err) {
             console.error("Website fetch error:", err);
         }
     };
-
     const fetchEmailSettings = async () => {
         try {
 
@@ -385,7 +388,7 @@ export default function Settings() {
                             <button onClick={clearLogs}>
                                 Clear Activity Logs
                             </button>
-                            
+
                         </div>
 
                     </div>

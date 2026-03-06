@@ -18,7 +18,11 @@ export default function Footer() {
 
         const res = await API.get("/api/settings/public");
 
-        setWebsite(res.data.website);
+        setWebsite(res.data?.website || {
+          siteTitle: "Accord Marketers",
+          contactEmail: "",
+          phone: ""
+        });
 
       } catch (err) {
         console.log("Footer settings error:", err);
@@ -34,7 +38,7 @@ export default function Footer() {
 
       <div className="container footer-inner">
 
-        
+
 
         <div className="footer-brand">
 
@@ -52,7 +56,7 @@ export default function Footer() {
 
         </div>
 
-        
+
 
         <div className="footer-links">
 
@@ -82,7 +86,7 @@ export default function Footer() {
 
         </div>
 
-        
+
 
         <div className="footer-contact">
 
@@ -96,10 +100,10 @@ export default function Footer() {
 
       </div>
 
-      
+
 
       <div className="footer-bottom">
-        
+
         <div className="footer-social-bottom">
           <span>Instagram</span>
           <span>|</span>

@@ -17,10 +17,12 @@ export default function Rcase() {
           "/api/case-studies?limit=2&random=true"
         );
 
-        setCases(data.caseStudies);
+        // SAFE SET
+        setCases(Array.isArray(data.caseStudies) ? data.caseStudies : []);
 
       } catch (error) {
         console.error("Error fetching case studies:", error);
+        setCases([]); // fallback
       } finally {
         setLoading(false);
       }
@@ -41,7 +43,7 @@ export default function Rcase() {
 
         <div className="home-case-grid">
 
-          {cases.map((item) => (
+          {Array.isArray(cases) && cases.map((item) => (
 
             <Link
               key={item._id}

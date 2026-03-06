@@ -40,7 +40,7 @@ export default function Blog() {
 
     socket.on("blogViewUpdated", (data) => {
 
-      setBlogs((prev) =>
+      setBlogs((prev = []) =>
         prev.map((blog) =>
           blog._id === data.blogId
             ? { ...blog, views: data.views }
@@ -74,7 +74,7 @@ export default function Blog() {
     <div className="blog-page-p container">
       <h1>Our Blog</h1>
 
-      
+
       <div className="blog-filter-b">
         <select
           value={category}
@@ -91,25 +91,26 @@ export default function Blog() {
       </div>
 
       <div className="blog-grid">
-        {blogs.map((blog) => (
-          <div className="blog-card" key={blog._id}>
-            <img src={blog.featuredImage} alt={blog.title} />
+        {Array.isArray(blogs) &&
+          blogs.map((blog) => (
+            <div className="blog-card" key={blog._id}>
+              <img src={blog.featuredImage} alt={blog.title} />
 
-            <h3>{blog.title}</h3>
+              <h3>{blog.title}</h3>
 
-            <p className="blog-meta">
-              {blog.category} • {blog.readTime} min read • {blog.views} views
-            </p>
+              <p className="blog-meta">
+                {blog.category} • {blog.readTime} min read • {blog.views} views
+              </p>
 
-            <p>{blog.excerpt}</p>
-            <Link to={`/blog/${blog.slug}`} className="read-more">
-              Read More →
-            </Link>
-          </div>
-        ))}
+              <p>{blog.excerpt}</p>
+              <Link to={`/blog/${blog.slug}`} className="read-more">
+                Read More →
+              </Link>
+            </div>
+          ))}
       </div>
 
-      
+
       <div className="pagination-blog">
 
         <button

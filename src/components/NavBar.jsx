@@ -13,7 +13,7 @@ export default function Navbar() {
     const fetchSettings = async () => {
       try {
         const res = await API.get("/api/settings/public");
-        setSiteTitle(res.data?.website?.siteTitle || "Accord");
+        setSiteTitle(res.data?.website?.siteTitle || "Accord Marketers");
       } catch (err) {
         console.log(err);
       }

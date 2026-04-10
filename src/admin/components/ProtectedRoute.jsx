@@ -12,7 +12,7 @@ export default function ProtectedRoute({ children }) {
   try {
     const decoded = jwtDecode(token);
 
-    
+
     if (decoded.exp * 1000 < Date.now()) {
       localStorage.removeItem("token");
       return <Navigate to="/admin/login" replace />;
